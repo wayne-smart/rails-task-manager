@@ -1,6 +1,6 @@
 <h1>Your Tasks</h1>
 <ul>
   <% @tasks.each do |t| %>
-    <li> <%= t.completed %> <%= t.title%></li>
+    <li><%= t.completed%> - <%= link_to t.title, restaurant_path(t) %></li>
   <% end %>
 </ul>
