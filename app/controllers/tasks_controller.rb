@@ -1,7 +1,5 @@
 class TasksController < ApplicationController
-
-  def show
+  def index
     @tasks = Task.all
   end
-
 end
